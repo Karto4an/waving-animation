@@ -8,8 +8,7 @@
     overflow: hidden;
     border: 5px solid #1a1a;
 }
-.circle::after{
-    content: "";
+.circle .wave{
     position: absolute;
     top: 25%;
     width: 200%;

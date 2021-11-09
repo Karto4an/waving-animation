@@ -1,0 +1,17 @@
+menu{
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+    border-radius: 5%;
+
+    position: absolute;
+    top: 0;
+    right: 25px;
+
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+}
+#wave-hight{
+    direction: rtl;
+}

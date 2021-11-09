@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <title>Waving animation</title>
     <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <div class="circle"></div>
+    <div class="circle"><div class="wave"></div></div>
+    <menu>
+        <span class="size_label">Size</span> <input type="range" name="Size" id="circle-size" min="32" max="1024" value="200">
+        <span class="wave_label">Wave hight</span> <input type="range" name="Wave hight" id="wave-hight" min="0" max="115" value="25">
+    </menu>
+
+
+
+    <script src="menu.js"></script>
 </body>
 </html>
