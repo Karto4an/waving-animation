@@ -10,9 +10,46 @@
     <div class="circle"><div class="wave"></div></div>
     <menu>
         <span class="size_label">Size</span> <input type="range" name="Size" id="circle-size" min="32" max="1024" value="200">
-        <span class="wave_label">Wave hight</span> <input type="range" name="Wave hight" id="wave-hight" min="0" max="115" value="25">
+        <span class="wave_label">Wave hight</span> <input type="range" name="Wave hight" id="wave-height" min="0" max="115" value="25">
+        <span class="wave_square_width_label">Wave square width</span> <input type="range" name="Wave width" id="wave_square_width" min="100" max="500" value="200">
+        <span class="wave_square_height_label">Wave square height</span> <input type="range" name="Wave height" id="wave_square_height" min="100" max="500" value="200">
+        <span class="wave_border_color">Border color</span> <input type="color" name="" id="" disabled>
     </menu>
+    <aside>
+        <h2>HTML</h2>
+        <code id="html_code">&ltdiv class="circle"&gt&ltdiv class="wave&gt&lt/div&gt&lt/div&gt</code>
+        <h2>CSS</h2>
+        <code><pre id="css_code">
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: black;
 
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #1a1a;
+}
+.circle .wave{
+    position: absolute;
+    top: 25%;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+
+    background: rgba(85, 250, 85, 0.5);
+    box-shadow: 0 0 20px #03bc03;
+
+    border-radius: 40%;
+    animation: rotate 10s linear forwards infinite;
+}
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+        </pre></code>
+    </aside>
 
 
     <script src="menu.js"></script>

@@ -12,6 +12,23 @@ menu{
     height: fit-content;
     width: fit-content;
 }
-#wave-hight{
+#wave-height{
     direction: rtl;
+}
+h2{margin: 0;}
+aside{
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5%;
+
+    position: absolute;
+    top: 250px;
+    right: 25px;
+
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    max-width: 400px;
 }
